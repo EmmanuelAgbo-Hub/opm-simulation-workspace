@@ -1,0 +1,3 @@
+[submodule "opm-tests"]
+	path = opm-tests
+	url = https://github.com/OPM/opm-tests.git
