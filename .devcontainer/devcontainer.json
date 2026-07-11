@@ -3,8 +3,6 @@
   "build": {
     "dockerfile": "Dockerfile"
   },
-  
-  // Customizes settings and installs essential extensions inside the Codespace
   "customizations": {
     "vscode": {
       "settings": {
@@ -21,10 +19,6 @@
       ]
     }
   },
-
-  // Runs commands after the container is created (e.g., verifying installations)
   "postCreateCommand": "flow --version || echo 'OPM Flow binary ready for development'",
-
-  // Ensures you don't run as root unnecessarily
-  "remoteUser": "vscode"
+  "remoteUser": "root"
 }
